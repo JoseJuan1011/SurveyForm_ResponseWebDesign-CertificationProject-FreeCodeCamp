@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      <i>Thank you for taking the time to help us improve the platform</i>
+    </p>
+    <form id="survey-form" action="" method="POST">
+      <label id="name-label" for="name">
+        Name
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </label>
+      <label id="email-label" for="email">
+        Email
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+          required
+        />
+      </label>
+
+      <label id="number-label" for="number">
+        Number
+        <input
+          id="number"
+          type="number"
+          name="number"
+          min="14"
+          max="120"
+          placeholder="14-120"
+        />
+      </label>
+      <label id="dropdown-label" for="dropdown">
+        Dropdown
+        <select id="dropdown" name="dropdown">
+          <option value="1">First Option</option>
+          <option value="2">Second Option</option>
+        </select>
+      </label>
+      <label id="first-radio-label" for="first-radio">
+        <input id="first-radio" class="inline" name="radio" type="radio" value="first" /> First Radio
+      </label>
+      <label id="second-radio-label" for="second-radio">
+        <input id="second-radio" class="inline" name="radio" type="radio" value="second"/> Second Radio
+      </label>
+      <label id="first-check-label" for="first-check">
+        <input type="checkbox" class="inline" id="first-check" value="first"/> First Check
+      </label>
+      <label id="second-check-label" for="second-check">
+        <input type="checkbox" class="inline" id="second-check" value="second"/> Second Check
+      </label>
+      <label id="additional-comments-label">
+        Additional Comments
+        <textarea id="additional-comments" rows="5" placeholder="Enter your comment here..."></textarea>
+      </label>
+      <input id="submit" type="submit"/>
+    </form>
+  </body>
+</html>
